@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ladder
   - Door
+  - Tether Points
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - Water
   - UI
   - Ladder
-  - 
-  - 
+  - Player
+  - Ice
   - 
   - 
   - 
