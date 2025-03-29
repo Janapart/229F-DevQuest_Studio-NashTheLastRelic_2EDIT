@@ -26,8 +26,10 @@ public class FloatingRotatingGem : MonoBehaviour
     {
         if (other.CompareTag("Player")) // ตรวจสอบว่าเป็นตัวผู้เล่นหรือไม่
         {
-            ScroeManager.instance.AddScore(scoreValue); // เพิ่มคะแนน
-            Destroy(gameObject); // ทำลายเพชรเมื่อเก็บได้
+            GameManager.instance.AddGem();
+
+            // ทำให้เพชรหายไปหลังจากเก็บ
+            gameObject.SetActive(false);
         }
     }
 

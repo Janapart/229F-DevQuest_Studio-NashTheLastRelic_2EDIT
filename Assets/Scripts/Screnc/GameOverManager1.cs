@@ -7,6 +7,6 @@ public class GameOverManager1 : MonoBehaviour
     {
         HealthManager.instance.ResetLives(); // รีเซ็ตจำนวนชีวิต
         SceneManager.LoadScene("DemoMAP_version1");
-        Debug.Log("awdawd"); // โหลดซีนหลักใหม่
+        
     }
 }

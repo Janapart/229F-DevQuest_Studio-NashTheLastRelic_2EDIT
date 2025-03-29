@@ -35,7 +35,7 @@ public class ChoiceDialog : MonoBehaviour
     private void ShowDialog()
     {
         dialogPanel.SetActive(true);
-        messageText.text = "ประตูนี้จะข้ามด่านไปเลยแน่ใจมั้ยที่จะเข้าประตูนี้ คิดว่าเกินความสามารถตัวเองมั้ย";
+        messageText.text = "เข้ามั้ย?";
     }
 
     private void OnYesClicked()
@@ -44,9 +44,7 @@ public class ChoiceDialog : MonoBehaviour
         {
             if (playerInventory.HasKey(doorKeyID))
             {
-                
-                Debug.Log("ไป");
-                //SceneManager.LoadScene(sceneToLoad);
+                GameManager.instance.EnterDoor();
             }
             else if (playerInventory.HasAnyKey()) 
             {
